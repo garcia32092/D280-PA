@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* C1: Font-family declaration */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #007acc;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    background-image: linear-gradient(to right, #007acc , #003366);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header img {
+    width: 4.25vw;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* C1: :hover rollover effect for nav buttons */
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* C4: At least one class selector */
+.float-container {
+    overflow: auto;
+    background-color: #e7e7e7;
+}
+
+/* C4: At least one element selector */
+section {
+    float: left;
+    width: 70%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
+
+section > p {
+    text-align: center;
+}
+
+aside {
+    /* C2: Float property to position at least one HTML element to the side of another */
+    float: right;
+    width: 30%;
+    padding: 25px;
+    background-color: #e7e7e7;
+    box-sizing: border-box;
+}
+
+.question-form-container h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.question-form-container {
+    border: 1px dashed #333;
+}
+
+footer {
+    font-size: 12px;
+    clear: both;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    /* C3: Relative positioning in at least one area of the web page */
+    position: relative;
+    padding-bottom: 75px;
+}
+
+footer a {
+    color: #59afe1;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #007acc;
+}
+
+a:hover {
+    color: #0057a3;
+}
+
+.back-to-the-top {
+    /* C3: absolute positioning in at least one area of the web page */
+    position: absolute;
+    background-color: #007acc;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 4px;
+    bottom: 25px;
+    right: 5vw;
+}
+
+.back-to-the-top:hover {
+    background-color: #0057a3;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Form styling */
+/* C4: At least one ID selector */
+#contactForm {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f3f3f3;
+    border-radius: 8px;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contactForm button[type="submit"] {
+    width: 100%;
+    background-color: #007acc;
+    color: white;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contactForm button[type="submit"]:hover {
+    background-color: #003366;
+}
+
+#contactForm input[type="text"]:focus,
+#contactForm input[type="email"]:focus,
+#contactForm textarea:focus {
+    border-color: #007acc;
+    outline: none;
+}
+
+
+/* Table styling */
+.table-container table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table-container th, .table-container td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.table-container th {
+    background-color: #007acc;
+    color: white;
+}
+
+.table-container tr:hover {
+    background-color: #ccc;
+}

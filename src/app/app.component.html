@@ -1,0 +1,34 @@
+<header>
+  <img src="./assets/seal.png" alt="State Seal Logo">
+  <h1>{{title}}</h1>
+</header>
+<div class="float-container">
+  <div class="left-column">
+    <h2>World Map</h2>
+    <app-map
+    (name)="OnNameChange($event)"
+    (capital)="OnCapitalChange($event)"
+    (region)="OnRegionChange($event)"
+    (income)="OnIncomeChange($event)"
+    (longitude)="OnLongitudeChange($event)"
+    (latitude)="OnLatitudeChange($event)" 
+    ></app-map>
+  </div>
+  <div class="right-column">
+    <app-map-info
+    [name]="name"
+    [capital]="capital"
+    [region]="region"
+    [income]="income"
+    [longitude]="longitude"
+    [latitude]="latitude"
+    ></app-map-info>
+  </div>
+</div>
+<footer>
+  <p>
+      &#169; 2024 State Government Office<br/>
+      <a href="">Terms and Conditions</a><br/>
+      <a href="">Privacy policy</a>
+  </p>
+</footer>

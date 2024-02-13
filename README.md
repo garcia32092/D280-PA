@@ -1,4 +1,4 @@
-# D280App
+# D280 Performance Assessment Angular World Map Application
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0. These achievements showcase my proficiency in frontend technologies, specifically in SVG creation,
 Angular development, and TypeScript programming. The project not only demonstrates my ability to create visually appealing and interactive components but also highlights my skills in integrating external data sources for a comprehensive user experience.

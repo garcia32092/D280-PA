@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'd280_app'`, () => {
+  it(`should have as title 'world-map-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('d280_app');
+    expect(app.title).toEqual('world-map-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('d280_app app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('world-map-app app is running!');
   });
 });

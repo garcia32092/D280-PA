@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Country } from './model/country';
 
 @Component({
   selector: 'app-root',
@@ -7,33 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'State Government Office';
-  name!: string;
-  capital!: string;
-  region!: string;
-  income!: string;
-  longitude!: string;
-  latitude!: string;
+  selectedCountry?: Country;
 
-  OnNameChange(value:string){
-    this.name = value;
+  onCountrySelect(country: Country) {
+    this.selectedCountry = country;
   }
-  OnCapitalChange(value:string){
-    this.capital = value;
-  }
-  OnRegionChange(value:string){
-    this.region = value;
-  }
-  OnIncomeChange(value:string){
-    this.income = value;
-  }
-  OnLongitudeChange(value:string){
-    this.longitude = value;
-  }
-  OnLatitudeChange(value:string){
-    this.latitude = value;
-  }
-
- 
-
 }
-

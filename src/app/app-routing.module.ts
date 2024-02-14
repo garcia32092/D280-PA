@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MapComponent } from './components/map/map.component';
+import { WorldMapComponent } from './components/world-map/world-map.component';
 
 const routes: Routes = [
-  {path: '', component:MapComponent}
+  {path: '', component:WorldMapComponent}
 ];
 
 @NgModule({

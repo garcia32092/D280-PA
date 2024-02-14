@@ -5,10 +5,10 @@ import { Observable} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
+export class WorldBankService {
   constructor(private http: HttpClient) { }
 
-  getCountryDetails(countryId: string): Observable<any> {
+  getCountryData(countryId: string): Observable<any> {
     const url = `http://api.worldbank.org/v2/country/${countryId}?format=json`;
     return this.http.get<any>(url);
   }

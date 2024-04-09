@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Build Angular Project
-        run: npm run build -- --configuration production --base-href "https://<username>.github.io/<repository-name>/"
+        run: npm run build -- --configuration production --base-href "https://garcia32092.github.io/D280-PA/"
         env:
           CI: true
 

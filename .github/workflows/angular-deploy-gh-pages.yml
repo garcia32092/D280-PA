@@ -25,14 +25,9 @@ jobs:
         env:
           CI: true
 
-      - name: Move Files
-        run: |
-          mv dist/browser/* dist/
-          rm -r dist/browser
-
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages  # The branch the action should deploy to.
-          folder: dist/world-map-app  # The folder the action should deploy.
+          folder: dist/world-map-app/browser  # The folder the action should deploy.
           token: ${{ secrets.GITHUB_TOKEN }}  # GitHub automatically creates a GITHUB_TOKEN secret to use in your workflow.
